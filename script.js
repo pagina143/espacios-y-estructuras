@@ -6,7 +6,7 @@
 /* ===== Datos ===== */
 var SERVICES = [
   { t: "Construcción",
-    fotos: [["img/ur3.jpg", "Unidad residencial Valle de la Ferreira"], ["img/cl3.jpg", "Clínica Imbanaco · Ciudad Jardín"]],
+    fotos: [["img/ur3.jpg", "Unidad residencial Valle de la Ferreira"], ["img/imb1.jpg", "Clínica Imbanaco · Ciudad Jardín"]],
     gente: [{
       rol: "Representante legal",
       nombre: "Liliana Rodríguez Rodríguez",
@@ -50,7 +50,7 @@ var SERVICES = [
 var PROJECTS = [
   { id: "clinica-imbanaco", name: "Sede Ciudad Jardín Clínica Imbanaco", short: "Clínica Imbanaco, sede Ciudad Jardín",
     tipo: "Clínica", ubic: "Cali, Colombia", alcance: "Ejecución de obra", anio: "2026", costo: "$1.300.000.000",
-    imgs: [["cl3", "Fachada del Centro Diagnóstico Ciudad Jardín", 1290, 1281], ["cl5", "Acceso con muro de madera y logo", 1290, 1283], ["cl1", "Sala de espera con ventanales", 1290, 708], ["cl4", "Sala de espera y recepción", 1290, 1271], ["cl2", "Zona de estar", 1290, 707], ["cl6", "Sala de resonancia", 1290, 1109]] },
+    imgs: [["imb1", "Fachada del Centro Diagnóstico Ciudad Jardín", 1290, 1281], ["imb2", "Fachada de la Clínica Imbanaco vista desde arriba", 1290, 2083], ["imb3", "Sala de espera con ventanales", 1290, 1271], ["imb4", "Sala de resonancia", 1290, 1109], ["imb5", "Sala de espera y zona de estar", 1290, 716], ["imb6", "Zona de estar con plantas", 1127, 716]] },
   { id: "parroquia-corpus-christi", name: "Renovación Parroquia Corpus Christi La Hacienda", short: "Parroquia Corpus Christi La Hacienda",
     tipo: "Patrimonial", ubic: "Cali, Colombia", alcance: "Cambio y adecuación de piso y tratamiento de humedades", anio: "2026", costo: "$105.000.000",
     imgs: [["pq1", "Nave central con piso de baldosa decorativa", 1200, 1800], ["pq4", "Vista del interior y la cubierta de madera", 1200, 1800], ["pq5", "Pasillo central hacia el atrio", 1200, 1800]] },
