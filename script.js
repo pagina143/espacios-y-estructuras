@@ -5,10 +5,45 @@
 
 /* ===== Datos ===== */
 var SERVICES = [
-  { t: "Construcción", img: "img/ur3.jpg" },
-  { t: "Diseño", img: "img/tl3.jpg" },
-  { t: "Consultoría", img: "img/cl4.jpg" },
-  { t: "Interventoría", img: "img/pq3.jpg" }
+  { t: "Construcción",
+    fotos: [["img/ur3.jpg", "Unidad residencial Valle de la Ferreira"], ["img/cl3.jpg", "Clínica Imbanaco · Ciudad Jardín"]],
+    gente: [{
+      rol: "Representante legal",
+      nombre: "Liliana Rodríguez Rodríguez",
+      cargo: "Ingeniera civil · más de 30 años de experiencia",
+      bio: "Con amplia trayectoria en el sector constructor de todo tipo de edificaciones.",
+      lista: [
+        "Construcción de estructuras metálicas en el campo de la ingeniería civil.",
+        "Especialista en la construcción y remodelación de edificios para el sector bancario.",
+        "Especialista en la dirección de proyectos de obra civil en situación de ocupación y de alto riesgo constructivo."
+      ],
+      estudios: [
+        ["1998", "Especialista en Gerencia de Construcciones"],
+        ["1994", "Especialista en Estructuras de Concreto Reforzado"],
+        ["1990", "Ingeniera Civil"]
+      ],
+      uni: "Universidad del Valle · Cali, Colombia"
+    }] },
+  { t: "Diseño",
+    fotos: [["img/pq4.jpg", "Parroquia Corpus Christi La Hacienda"], ["img/apto1.jpg", "Apartamento Tierra Linda"], ["img/co3.jpg", "Instituciones educativas Comuna 10"]],
+    equipo: "Equipo de diseño",
+    gente: [
+      { rol: "Directora de diseño", nombre: "Valeria Zúñiga Ávila",
+        estudios: [["2025", "Arquitecta con énfasis en bioclimática"]], uni: "Universidad Javeriana · Cali, Colombia" },
+      { rol: "Director de proyectos", nombre: "Nicolás Ken Rodas Londoño",
+        estudios: [["2022", "Arquitecto con énfasis en bioclimática"]], uni: "Universidad Javeriana · Cali, Colombia" },
+      { rol: "Directora de proyectos", nombre: "Alexandra Cano Bonilla",
+        estudios: [["2025", "Arquitecta con énfasis en bioclimática"]], uni: "Universidad Javeriana · Cali, Colombia" }
+    ] },
+  { t: "Consultoría",
+    fotos: [],
+    incluye: [
+      "Estudio de factibilidad de proyectos constructivos.",
+      "Elaboración de presupuestos.",
+      "Elaboración de programación de obras.",
+      "Elaboración de flujo de fondos para las obras en ejecución."
+    ],
+    gente: [] }
 ];
 
 /* imgs: [archivo sin extensión, descripción, ancho, alto] */
@@ -18,17 +53,17 @@ var PROJECTS = [
     imgs: [["cl3", "Fachada del Centro Diagnóstico Ciudad Jardín", 1290, 1281], ["cl5", "Acceso con muro de madera y logo", 1290, 1283], ["cl1", "Sala de espera con ventanales", 1290, 708], ["cl4", "Sala de espera y recepción", 1290, 1271], ["cl2", "Zona de estar", 1290, 707], ["cl6", "Sala de resonancia", 1290, 1109]] },
   { id: "parroquia-corpus-christi", name: "Renovación Parroquia Corpus Christi La Hacienda", short: "Parroquia Corpus Christi La Hacienda",
     tipo: "Patrimonial", ubic: "Cali, Colombia", alcance: "Cambio y adecuación de piso y tratamiento de humedades", anio: "2026", costo: "$105.000.000",
-    imgs: [["pq1", "Nave central con piso de baldosa decorativa", 1200, 1800], ["pq4", "Vista del interior y la cubierta de madera", 1200, 1800], ["pq5", "Pasillo central hacia el atrio", 1200, 1800], ["pq2", "Atrio de ingreso con rombos de baldosa", 1200, 1800], ["pq3", "Vitrales con iluminación indirecta", 1200, 1800]] },
+    imgs: [["pq1", "Nave central con piso de baldosa decorativa", 1200, 1800], ["pq4", "Vista del interior y la cubierta de madera", 1200, 1800], ["pq5", "Pasillo central hacia el atrio", 1200, 1800]] },
   { id: "unidad-valle-de-la-ferreira", name: "Unidad residencial Valle de la Ferreira", short: "Unidad residencial Valle de la Ferreira",
     tipo: "Residencial", ubic: "Cali, Colombia", alcance: "Ejecución total de la obra", anio: "2004 – 2005", costo: "$600.000.000",
     imgs: [["ur3", "Torre con balcones y zona verde", 480, 640], ["ur4", "Fachada de la torre", 480, 640], ["ur1", "Torre durante la obra", 1350, 1800], ["ur2", "Balcones durante la obra", 1350, 1800]] },
   { id: "tierra-linda", name: "Apartamento Tierra Linda de la Planicie", short: "Apartamento Tierra Linda de la Planicie",
     tipo: "Residencial", ubic: "Cali, Colombia", alcance: "Diseño y ejecución de obra blanca", anio: "2026", costo: "$65.000.000",
-    imgs: [["tl3", "Cocina con isla en madera y cuarzo", 1200, 1800], ["tl2", "Sala con mueble flotante", 1200, 1800], ["tl5", "Baño con ducha y luz indirecta", 1200, 1800], ["tl6", "Barra de cocina", 1200, 1800], ["tl1", "Sala y comedor", 1200, 1800]] },
+    imgs: [["apto1", "Cocina con isla en madera y cuarzo", 1200, 1800], ["apto2", "Sala y comedor con barra de cocina", 1200, 1800], ["apto3", "Sala con mueble flotante", 1200, 1800], ["apto4", "Baño con ducha y luz indirecta", 1200, 1800]] },
   { id: "colegios-comuna-10", name: "Adecuación de planta física de instituciones educativas Comuna 10", short: "Instituciones educativas Comuna 10",
     resumen: "Cambio de cubiertas en 6 instituciones",
     tipo: "Institucional", ubic: "Cali, Colombia", alcance: "Cambio de cubiertas en tejas de asbesto cemento por cubiertas en tejas termoacústicas UPVC en 6 instituciones educativas, sumando más de 2.000 m² de superficie cubierta", anio: "2026", costo: "$309.000.000",
-    imgs: [["co4", "Patio y fachada de una institución educativa", 1448, 1086], ["co3", "Institución educativa Rafael Navia Varón", 660, 400], ["co1", "Fachada de una institución educativa", 1600, 925], ["co2", "Patio y cubiertas de una institución educativa", 1600, 777], ["co5", "Entrada de una institución educativa", 1353, 823]] }
+    imgs: [["co3", "Institución educativa Rafael Navia Varón", 660, 400]] }
 ];
 
 /* ===== Utilidades ===== */
@@ -38,28 +73,61 @@ var deck = $("#deck");
 var ARROW_L = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>';
 var ARROW_R = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>';
 
-/* ===== Servicios (acordeón con foto) ===== */
+/* ===== Servicios (acordeón: fotos + datos de las personas) ===== */
 (function () {
-  var list = $("#svcList"), photo = $("#svcPhoto");
+  var list = $("#svcList"), panel = $("#svcPanel");
+  function esc(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+  function contenido(s) {
+    var h = s.fotos.length ? '<div class="ph-row n' + s.fotos.length + '">' : '';
+    s.fotos.forEach(function (f) {
+      h += '<figure class="ph"><img src="' + f[0] + '" alt="' + esc(f[1]) + '" loading="lazy">' + (f[1] ? '<figcaption>' + esc(f[1]) + '</figcaption>' : '') + '</figure>';
+    });
+    if (s.fotos.length) h += '</div>';
+    if (s.incluye) {
+      h += '<h4 class="equipo">Incluye</h4><ul class="pe-lista incl">';
+      s.incluye.forEach(function (x) { h += '<li>' + esc(x) + '</li>'; });
+      h += '</ul>';
+    }
+    if (s.equipo) h += '<h4 class="equipo">' + esc(s.equipo) + '</h4>';
+    s.gente.forEach(function (g) {
+      h += '<div class="persona"><button type="button" class="pe-head" aria-expanded="false"><span><small class="pe-rol">' + esc(g.rol) + '</small><strong class="pe-nombre">' + esc(g.nombre) + '</strong></span><i class="plus" aria-hidden="true"></i></button><div class="pe-body"><div class="pe-in">';
+      if (g.cargo) h += '<p class="pe-cargo">' + esc(g.cargo) + '</p>';
+      if (g.bio) h += '<p class="pe-bio">' + esc(g.bio) + '</p>';
+      if (g.lista) { h += '<ul class="pe-lista">'; g.lista.forEach(function (x) { h += '<li>' + esc(x) + '</li>'; }); h += '</ul>'; }
+      h += '<h4>Estudios</h4><ol class="edu">';
+      g.estudios.forEach(function (x) { h += '<li><b>' + x[0] + '</b><div><strong>' + esc(x[1]) + '</strong><span>' + esc(g.uni) + '</span></div></li>'; });
+      h += '</ol></div></div></div>';
+    });
+    return h;
+  }
+  function cajas(root) {
+    $$(".pe-head", root).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var box = btn.parentNode, open = !box.classList.contains("open");
+        box.classList.toggle("open", open);
+        btn.setAttribute("aria-expanded", open);
+      });
+    });
+  }
   SERVICES.forEach(function (s, i) {
     var li = document.createElement("li");
     li.className = "svc" + (i === 0 ? " on" : "");
-    li.innerHTML = '<button type="button" aria-expanded="' + (i === 0) + '"><span class="num">0' + (i + 1) + '</span><span class="ttl">' + s.t + '</span></button>';
-    list.appendChild(li);
-    var im = document.createElement("img");
-    im.src = s.img; im.alt = ""; im.loading = "lazy";
-    if (i === 0) im.className = "on";
-    photo.appendChild(im);
+    li.innerHTML = '<button type="button" aria-expanded="' + (i === 0) + '"><span class="num">0' + (i + 1) + '</span><span class="ttl">' + s.t + '</span></button><div class="pnl"><div class="pnl-in">' + contenido(s) + '</div></div>';
+    list.appendChild(li); cajas(li);
+    var d = document.createElement("div");
+    d.className = "sp" + (i === 0 ? " on" : "");
+    d.innerHTML = contenido(s);
+    panel.appendChild(d); cajas(d);
     function activate() {
       $$(".svc", list).forEach(function (x, j) {
         x.classList.toggle("on", j === i);
         $("button", x).setAttribute("aria-expanded", j === i);
       });
-      $$("img", photo).forEach(function (x, j) { x.classList.toggle("on", j === i); });
+      $$(".sp", panel).forEach(function (x, j) { x.classList.toggle("on", j === i); });
     }
     var b = $("button", li);
     b.addEventListener("click", activate);
-    b.addEventListener("mouseenter", activate);
+    b.addEventListener("mouseenter", function () { if (window.matchMedia("(min-width:1000px)").matches) activate(); });
     b.addEventListener("focus", activate);
   });
 })();
@@ -100,7 +168,7 @@ var galleries = {};
     }).join("");
     s.innerHTML =
       '<div class="p-head"><span class="idx">PROYECTO 0' + (i + 1) + ' / 0' + PROJECTS.length + '</span><h2>' + p.name + '</h2></div>' +
-      '<div class="gal"><div class="scroller" tabindex="0" aria-label="Fotos de ' + p.short + '">' + figs + '</div>' +
+      '<div class="gal' + (p.imgs.length === 1 ? ' solo' : '') + '"><div class="scroller" tabindex="0" aria-label="Fotos de ' + p.short + '">' + figs + '</div>' +
       '<div class="pg" aria-hidden="true">' + p.imgs.map(function (m, k) { return '<button type="button" tabindex="-1" data-k="' + k + '"></button>'; }).join('') + '</div>' +
       '<div class="bar">' +
       '<button class="arr" type="button" data-d="-1" aria-label="Foto anterior">' + ARROW_L + '</button>' +
@@ -297,7 +365,7 @@ document.addEventListener("keydown", function (e) {
 
 /* ===== Aparecer al hacer scroll ===== */
 (function () {
-  var sel = ".hero-text > *, .trio a, .hero-meta, .n-left .tag, .n-left p, .n-left img, .n-right > *, .rep-main > *, .rep-edu > *, .edu li, .s-head, .svc, .otros, .s-photo, .p-top, .p-row, .p-head, .gal, .p-data dl div, .nextp, #contacto h2, #contacto .sub, .composer, .c-list li";
+  var sel = ".hero-text > *, .trio a, .hero-meta, .n-left .tag, .n-left p, .n-left img, .n-right > *, .s-head, .svc, .otros, .s-photo, .p-top, .p-row, .p-head, .gal, .p-data dl div, .nextp, #contacto h2, #contacto .sub, .composer, .c-list li";
   var els = $$(sel);
   els.forEach(function (el) {
     el.classList.add("rv");
@@ -334,7 +402,7 @@ document.addEventListener("keydown", function (e) {
 
 /* ===== Mensaje de WhatsApp a la medida ===== */
 (function () {
-  var OPTS = ["Construcción", "Diseño", "Consultoría", "Interventoría"];
+  var OPTS = ["Construcción", "Diseño", "Consultoría"];
   var box = $("#opts"), send = $("#waSend");
   if (!box) return;
   var chosen = [];
