@@ -28,7 +28,7 @@ var PROJECTS = [
   { id: "colegios-comuna-10", name: "Adecuación de planta física de instituciones educativas Comuna 10", short: "Instituciones educativas Comuna 10",
     resumen: "Cambio de cubiertas en 6 instituciones",
     tipo: "Institucional", ubic: "Cali, Colombia", alcance: "Cambio de cubiertas en tejas de asbesto cemento por cubiertas en tejas termoacústicas UPVC en 6 instituciones educativas, sumando más de 2.000 m² de superficie cubierta", anio: "2026", costo: "$309.000.000",
-    imgs: [["co4", "Patio y fachada de una institución educativa", 1448, 1086], ["co3", "Institución educativa Rafael Navia Varón", 660, 400], ["co1", "Fachada de una institución educativa", 1600, 925]] }
+    imgs: [["co4", "Patio y fachada de una institución educativa", 1448, 1086], ["co3", "Institución educativa Rafael Navia Varón", 660, 400], ["co1", "Fachada de una institución educativa", 1600, 925], ["co2", "Patio y cubiertas de una institución educativa", 1600, 777], ["co5", "Entrada de una institución educativa", 1353, 823]] }
 ];
 
 /* ===== Utilidades ===== */
