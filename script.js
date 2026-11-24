@@ -16,7 +16,7 @@ var PROJECTS = [
   { id: "clinica-imbanaco", name: "Sede Ciudad Jardín Clínica Imbanaco", short: "Clínica Imbanaco, sede Ciudad Jardín",
     tipo: "Clínica", ubic: "Cali, Colombia", alcance: "Ejecución de obra", anio: "2026", costo: "$1.300.000.000",
     imgs: [["cl3", "Fachada del Centro Diagnóstico Ciudad Jardín", 1290, 1281], ["cl5", "Acceso con muro de madera y logo", 1290, 1283], ["cl1", "Sala de espera con ventanales", 1290, 708], ["cl4", "Sala de espera y recepción", 1290, 1271], ["cl2", "Zona de estar", 1290, 707], ["cl6", "Sala de resonancia", 1290, 1109]] },
-  { id: "parroquia-corpus-christi", name: "Renovación Parroquia Corpus Christi", short: "Parroquia Corpus Christi",
+  { id: "parroquia-corpus-christi", name: "Renovación Parroquia Corpus Christi La Hacienda", short: "Parroquia Corpus Christi La Hacienda",
     tipo: "Patrimonial", ubic: "Cali, Colombia", alcance: "Cambio y adecuación de piso y tratamiento de humedades", anio: "2026", costo: "$105.000.000",
     imgs: [["pq1", "Nave central con piso de baldosa decorativa", 1200, 1800], ["pq4", "Vista del interior y la cubierta de madera", 1200, 1800], ["pq5", "Pasillo central hacia el atrio", 1200, 1800], ["pq2", "Atrio de ingreso con rombos de baldosa", 1200, 1800], ["pq3", "Vitrales con iluminación indirecta", 1200, 1800]] },
   { id: "unidad-valle-de-la-ferreira", name: "Unidad residencial Valle de la Ferreira", short: "Unidad residencial Valle de la Ferreira",
@@ -191,7 +191,7 @@ function setActive(i) {
     d.classList.toggle("on", j === i);
     if (j === i) d.setAttribute("aria-current", "true"); else d.removeAttribute("aria-current");
   });
-  var group = s.classList.contains("proj") ? "proyectos" : s.id;
+  var group = s.classList.contains("proj") ? "proyectos" : (s.dataset.group || s.id);
   navLinks.forEach(function (l) { l.classList.toggle("on", l.dataset.s === group); });
 }
 
@@ -297,7 +297,7 @@ document.addEventListener("keydown", function (e) {
 
 /* ===== Aparecer al hacer scroll ===== */
 (function () {
-  var sel = ".hero-text > *, .trio a, .hero-meta, .n-left .tag, .n-left p, .n-left img, .n-right > *, .s-head, .svc, .otros, .s-photo, .p-top, .p-row, .p-head, .gal, .p-data dl div, .nextp, #contacto h2, #contacto .sub, .composer, .c-list li";
+  var sel = ".hero-text > *, .trio a, .hero-meta, .n-left .tag, .n-left p, .n-left img, .n-right > *, .rep-main > *, .rep-edu > *, .edu li, .s-head, .svc, .otros, .s-photo, .p-top, .p-row, .p-head, .gal, .p-data dl div, .nextp, #contacto h2, #contacto .sub, .composer, .c-list li";
   var els = $$(sel);
   els.forEach(function (el) {
     el.classList.add("rv");

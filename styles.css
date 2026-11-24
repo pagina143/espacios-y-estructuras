@@ -469,3 +469,27 @@ h1,h2,h3{text-wrap:balance}
 .c-list a:hover svg{animation:bounce .6s ease}
 .head .cta svg{animation:wiggle 6s ease-in-out infinite}
 .btn:hover svg{animation:bounce .6s ease}
+
+
+/* =========================================================
+   REPRESENTANTE LEGAL
+   ========================================================= */
+#representante{background:var(--crudo);display:flex;flex-direction:column}
+#representante .wrap{margin-block:auto}
+.rep{display:grid;gap:28px;padding:28px 0 34px}
+.rep-name{font-family:var(--display);font-weight:600;text-transform:uppercase;font-size:clamp(1.9rem,8vw,3.2rem);line-height:1.2;letter-spacing:.02em;margin-top:20px;color:var(--tinta)}
+.rep-role{color:var(--azul);font-weight:600;letter-spacing:.03em;margin-top:6px}
+.rep-bio{color:var(--gris);margin-top:12px;line-height:1.7;max-width:52ch}
+.rep-list{list-style:none;margin-top:18px;border-top:2px solid var(--azul)}
+.rep-list li{position:relative;padding:13px 0 13px 24px;border-bottom:1px solid var(--arena-2);line-height:1.55;font-size:.95rem}
+.rep-list li::before{content:"";position:absolute;left:2px;top:21px;width:8px;height:8px;background:var(--azul)}
+.rep-edu h4{font-family:var(--display);font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:var(--azul);font-size:1.05rem;margin-bottom:10px}
+.edu{list-style:none;border-top:2px solid var(--azul)}
+.edu li{display:grid;grid-template-columns:76px 1fr;gap:12px;align-items:center;padding:16px 0;border-bottom:1px solid var(--arena-2)}
+.edu b{display:inline-block;transform-origin:left center;font-family:var(--display);font-size:1.7rem;font-weight:600;color:var(--azul)}
+.edu li:hover b,.edu li:active b{animation:pop .45s ease}
+.edu strong{display:block;font-weight:600;line-height:1.35}
+.edu span{display:block;margin-top:3px;font-size:.8rem;color:var(--gris)}
+@media (min-width:1000px){
+  .rep{grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,80px);align-items:center;padding:40px 0}
+}
