@@ -56,7 +56,7 @@ var PROJECTS = [
     imgs: [["pq1", "Nave central con piso de baldosa decorativa", 1200, 1800], ["pq4", "Vista del interior y la cubierta de madera", 1200, 1800], ["pq5", "Pasillo central hacia el atrio", 1200, 1800]] },
   { id: "unidad-valle-de-la-ferreira", name: "Unidad residencial Valle de la Ferreira", short: "Unidad residencial Valle de la Ferreira",
     tipo: "Residencial", ubic: "Cali, Colombia", alcance: "Ejecución total de la obra", anio: "2004 – 2005", costo: "$600.000.000",
-    imgs: [["ur3", "Torre con balcones y zona verde", 480, 640], ["ur4", "Fachada de la torre", 480, 640], ["ur1", "Torre durante la obra", 1350, 1800], ["ur2", "Balcones durante la obra", 1350, 1800]] },
+    imgs: [["ur3", "Torre con balcones y zona verde", 480, 640], ["ur4", "Fachada de la torre", 480, 640], ["ur5", "Edificio Valle de la Ferrería, torre 2", 1400, 1548], ["ur6", "Fachada del edificio durante la obra", 1600, 894]] },
   { id: "tierra-linda", name: "Apartamento Tierra Linda de la Planicie", short: "Apartamento Tierra Linda de la Planicie",
     tipo: "Residencial", ubic: "Cali, Colombia", alcance: "Diseño y ejecución de obra blanca", anio: "2026", costo: "$65.000.000",
     imgs: [["apto1", "Cocina con isla en madera y cuarzo", 1200, 1800], ["apto2", "Sala y comedor con barra de cocina", 1200, 1800], ["apto3", "Sala con mueble flotante", 1200, 1800], ["apto4", "Baño con ducha y luz indirecta", 1200, 1800]] },
