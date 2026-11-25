@@ -404,7 +404,6 @@ h1,h2,h3{text-wrap:balance}
 @media (min-width:1000px){
   .hero{grid-template-areas:"text trio"}
   .hero-text{align-self:center}
-  .n-left img{display:block}
   .gal .bar{display:flex;justify-content:flex-end}
   .p-data dl{grid-template-columns:1fr 1fr}
 }
@@ -614,3 +613,11 @@ h1,h2,h3{text-wrap:balance}
 .gal.solo .scroller{height:auto;overflow:visible;scroll-snap-type:none}
 .gal.solo .scroller figure{flex:1 1 100%;height:auto;min-width:0}
 .gal.solo .scroller img{width:100%;height:auto;display:block;max-height:68vh;object-fit:cover}
+
+/* Inicio: la foto de la Clínica Imbanaco más ancha para que se lea el logo */
+.trio{grid-template-columns:1fr 1fr 1.5fr}
+@media (min-width:1000px){.trio{grid-template-columns:1fr 1fr 1.5fr}}
+.trio a:nth-child(3) img{object-position:100% 50%;animation:kenburns-suave 10s ease-in-out infinite alternate}
+@keyframes kenburns-suave{from{transform:scale(1)}to{transform:scale(1.04)}}
+.trio{grid-template-columns:1fr 1fr 1.65fr}
+@media (min-width:1000px){.trio{grid-template-columns:.9fr .9fr 1.8fr}}
