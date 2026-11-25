@@ -6,16 +6,15 @@
 /* ===== Datos ===== */
 var SERVICES = [
   { t: "Construcción",
-    fotos: [["img/ur3.jpg", "Unidad residencial Valle de la Ferreira"], ["img/imb1.jpg", "Clínica Imbanaco · Ciudad Jardín"]],
+    fotos: [["img/ur7.jpg", "Unidad residencial Valle de la Ferreira"], ["img/imb1.jpg", "Clínica Imbanaco · Ciudad Jardín"]],
     gente: [{
       rol: "Representante legal",
       nombre: "Liliana Rodríguez Rodríguez",
       cargo: "Ingeniera civil · más de 30 años de experiencia",
       bio: "Con amplia trayectoria en el sector constructor de todo tipo de edificaciones.",
       lista: [
-        "Construcción de estructuras metálicas en el campo de la ingeniería civil.",
-        "Especialista en la construcción y remodelación de edificios para el sector bancario.",
-        "Especialista en la dirección de proyectos de obra civil en situación de ocupación y de alto riesgo constructivo."
+        "Especialista en la dirección de proyectos de obra civil en situación de ocupación y de alto riesgo constructivo.",
+        "Especialista en la construcción y remodelación de edificios para el sector constructor."
       ],
       estudios: [
         ["1998", "Especialista en Gerencia de Construcciones"],
@@ -48,15 +47,15 @@ var SERVICES = [
 
 /* imgs: [archivo sin extensión, descripción, ancho, alto] */
 var PROJECTS = [
-  { id: "clinica-imbanaco", name: "Sede Ciudad Jardín Clínica Imbanaco", short: "Clínica Imbanaco, sede Ciudad Jardín",
-    tipo: "Clínica", ubic: "Cali, Colombia", alcance: "Ejecución de obra", anio: "2026", costo: "$1.300.000.000",
-    imgs: [["imb1", "Fachada del Centro Diagnóstico Ciudad Jardín", 1290, 1281], ["imb2", "Fachada de la Clínica Imbanaco vista desde arriba", 1290, 2083], ["imb3", "Sala de espera con ventanales", 1290, 1271], ["imb4", "Sala de resonancia", 1290, 1109], ["imb7", "Sala de tomografía", 1290, 712], ["imb5", "Sala de espera y zona de estar", 1290, 716], ["imb6", "Zona de estar con plantas", 1127, 716]] },
+  { id: "unidad-valle-de-la-ferreira", name: "Unidad residencial Valle de la Ferreira", short: "Unidad residencial Valle de la Ferreira",
+    tipo: "Residencial", ubic: "Cali, Colombia", alcance: "Ejecución total de la obra", anio: "2004 – 2005", costo: "$600.000.000",
+    imgs: [["ur5", "Edificio Valle de la Ferrería, torre 2", 1400, 1548], ["ur6", "Fachada del edificio durante la obra", 1600, 894], ["ur7", "Torre con balcones, escalera y jardín", 1107, 1421], ["ur8", "Fachada lateral con balcones", 1086, 1448]] },
   { id: "parroquia-corpus-christi", name: "Renovación Parroquia Corpus Christi La Hacienda", short: "Parroquia Corpus Christi La Hacienda",
     tipo: "Patrimonial", ubic: "Cali, Colombia", alcance: "Cambio y adecuación de piso y tratamiento de humedades", anio: "2026", costo: "$105.000.000",
     imgs: [["pq1", "Nave central con piso de baldosa decorativa", 1200, 1800], ["pq4", "Vista del interior y la cubierta de madera", 1200, 1800], ["pq5", "Pasillo central hacia el atrio", 1200, 1800]] },
-  { id: "unidad-valle-de-la-ferreira", name: "Unidad residencial Valle de la Ferreira", short: "Unidad residencial Valle de la Ferreira",
-    tipo: "Residencial", ubic: "Cali, Colombia", alcance: "Ejecución total de la obra", anio: "2004 – 2005", costo: "$600.000.000",
-    imgs: [["ur3", "Torre con balcones y zona verde", 480, 640], ["ur4", "Fachada de la torre", 480, 640], ["ur5", "Edificio Valle de la Ferrería, torre 2", 1400, 1548], ["ur6", "Fachada del edificio durante la obra", 1600, 894]] },
+  { id: "clinica-imbanaco", name: "Sede Ciudad Jardín Clínica Imbanaco", short: "Clínica Imbanaco, sede Ciudad Jardín",
+    tipo: "Clínica", ubic: "Cali, Colombia", alcance: "Ejecución de obra", anio: "2026", costo: "$1.300.000.000",
+    imgs: [["imb2", "Fachada de la Clínica Imbanaco vista desde arriba", 1290, 2083], ["imb4", "Sala de resonancia", 1290, 1109], ["imb7", "Sala de tomografía", 1290, 712], ["imb6", "Zona de estar con plantas", 1127, 716]] },
   { id: "tierra-linda", name: "Apartamento Tierra Linda de la Planicie", short: "Apartamento Tierra Linda de la Planicie",
     tipo: "Residencial", ubic: "Cali, Colombia", alcance: "Diseño y ejecución de obra blanca", anio: "2026", costo: "$65.000.000",
     imgs: [["apto1", "Cocina con isla en madera y cuarzo", 1200, 1800], ["apto2", "Sala y comedor con barra de cocina", 1200, 1800], ["apto3", "Sala con mueble flotante", 1200, 1800], ["apto4", "Baño con ducha y luz indirecta", 1200, 1800]] },
