@@ -54,7 +54,7 @@ var PROJECTS = [
     tipo: "Patrimonial", ubic: "Cali, Colombia", alcance: "Cambio y adecuación de piso y tratamiento de humedades", anio: "2026", costo: "$105.000.000",
     imgs: [["pq1", "Nave central con piso de baldosa decorativa", 1200, 1800], ["pq4", "Vista del interior y la cubierta de madera", 1200, 1800], ["pq5", "Pasillo central hacia el atrio", 1200, 1800]] },
   { id: "clinica-imbanaco", name: "Sede Ciudad Jardín Clínica Imbanaco", short: "Clínica Imbanaco, sede Ciudad Jardín",
-    tipo: "Clínica", ubic: "Cali, Colombia", alcance: "Ejecución de obra", anio: "2026", costo: "$1.300.000.000",
+    tipo: "Clínica", ubic: "Cali, Colombia", alcance: "Ejecución de obra", anio: "2026", costo: "$880.000.000",
     imgs: [["imb2", "Fachada de la Clínica Imbanaco vista desde arriba", 1290, 2083], ["imb4", "Sala de resonancia", 1290, 1109], ["imb7", "Sala de tomografía", 1290, 712], ["imb6", "Zona de estar con plantas", 1127, 716], ["imb8", "Carta de recomendación de la Clínica Imbanaco", 1950, 2560]] },
   { id: "tierra-linda", name: "Apartamento Tierra Linda de la Planicie", short: "Apartamento Tierra Linda de la Planicie",
     tipo: "Residencial", ubic: "Cali, Colombia", alcance: "Diseño y ejecución de obra blanca", anio: "2026", costo: "$65.000.000",
