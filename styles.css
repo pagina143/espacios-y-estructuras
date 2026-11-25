@@ -177,7 +177,7 @@ h1,h2,h3{text-wrap:balance}
 .nextp a:hover{color:var(--azul);border-color:var(--azul)}
 
 /* ---------- 9. contacto ---------- */
-#contacto{background:var(--arena);color:var(--tinta);display:flex;flex-direction:column}
+#contacto{background:#f4eee1;color:var(--tinta);display:flex;flex-direction:column}
 #contacto .main{flex:1;display:flex;align-items:center}
 #contacto .wrap{padding:32px 0}
 #contacto h2{font-family:var(--display);font-weight:600;text-transform:uppercase;font-size:clamp(2.3rem,11vw,5rem);line-height:1.15;letter-spacing:.015em}
